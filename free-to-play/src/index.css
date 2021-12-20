@@ -1,0 +1,14 @@
+*{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
+    color: white;
+}
+
+.card{
+    background-color: #4b4a4a !important;
+    border-radius: 10px;
+}
+
+/* body{
+    background-color: #9c9c9c !important;
+} */
