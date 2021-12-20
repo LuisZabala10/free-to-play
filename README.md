@@ -1,3 +1,3 @@
 # free-to-play
 
-#A project madein react with typescript consuming the api free to game
+#A project made in React with TypeScript consuming the API free to game
