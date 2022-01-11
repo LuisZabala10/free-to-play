@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
-import Game from "./Game";
-import { IGame } from "../interface/IGame";
-import useGames from "../hooks/useGames";
-import Pagination from "./common/Pagination";
-import usePagination from "../hooks/usePagination";
+import { faDesktop, faSpinner, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGamepad, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import React, { useRef } from "react";
+import useGames from "../hooks/useGames";
+import usePagination from "../hooks/usePagination";
+import { IGame } from "../interface/IGame";
+import Pagination from "./common/Pagination";
+import Game from "./Game";
 
-const Games = () => {
-  const { isLoading, games } = useGames("/games");
+const BrowserGames = () => {
+  const { isLoading, games } = useGames("/games?platform=browser");
   const gamesPerPages = useRef(8);
 
   const {
@@ -28,8 +28,8 @@ const Games = () => {
         <>
           <div className="title">
             <h3>
-              <FontAwesomeIcon icon={faGamepad} color="white" className="icon"/>
-              All Games
+              <FontAwesomeIcon icon={faWindowMaximize} color="white" className="icon"/>
+              PC Games
             </h3>
           </div>
           <hr />
@@ -57,4 +57,4 @@ const Games = () => {
   );
 };
 
-export default Games;
+export default BrowserGames;

@@ -9,16 +9,7 @@ import '../src/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Header />
-      <div className="container">
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="allgames" element={<Games />} />
-        <Route path="computergames" element={<ComputerGames />} />
-      </Routes>
-      </div>
-    </BrowserRouter>
+    <App/>
   </React.StrictMode>,
   document.getElementById("root")
 );
