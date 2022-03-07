@@ -29,7 +29,7 @@ const BrowserGames = () => {
           <div className="title">
             <h3>
               <FontAwesomeIcon icon={faWindowMaximize} color="white" className="icon"/>
-              PC Games
+              Browser Games
             </h3>
           </div>
           <hr />
